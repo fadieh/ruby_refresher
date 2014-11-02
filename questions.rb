@@ -86,7 +86,7 @@ end
 
 # return the shortest word in an array
 def shortest_word_in_array(array)
-
+	array.max{|a, b| b.length <=> a.length }
 end
 
 # return the shortest word in an array
