@@ -1,18 +1,16 @@
 # keep only the elements that start with an a
 def select_elements_starting_with_a(array)
-	n = ['bananas', 'apples', 'pears', 'avocados']
-	letter = 'a'
-	n.select { |a| a[0] == letter }
+	array.select { |a| a[0] == 'a' }
 end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
-	n = ['john', 'david', 'omar', 'fred', 'idris', 'angela']
-	n.select {|vowel| vowel.downcase.chr =~ /[aeiou]/ }
+	array.select {|vowel| vowel.downcase.chr =~ /[aeiou]/ }
 end
 
 # remove instances of nil (but NOT false) from an array
 def remove_nils_from_array(array)
+
 end
 
 # remove instances of nil AND false from an array
