@@ -1,5 +1,8 @@
 # keep only the elements that start with an a
 def select_elements_starting_with_a(array)
+	n = ['bananas', 'apples', 'pears', 'avocados']
+	letter = 'a'
+	n.select { |a| a[0] == letter }
 end
 
 # keep only the elements that start with a vowel
