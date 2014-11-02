@@ -61,6 +61,11 @@ end
 # turn a positive integer into a negative integer. A negative integer
 # stays negative
 def make_numbers_negative(number)
+	if number > 0
+	number = number * -1
+	else
+	number = number
+	end
 end
 
 # turn an array of numbers into two arrays of numbers, one an array of 
