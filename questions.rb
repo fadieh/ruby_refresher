@@ -61,11 +61,7 @@ end
 # turn a positive integer into a negative integer. A negative integer
 # stays negative
 def make_numbers_negative(number)
-	if number > 0
-	number = number * -1
-	else
-	number = number
-	end
+	number > 0 ? number * -1 : number
 end
 
 # turn an array of numbers into two arrays of numbers, one an array of 
@@ -108,6 +104,7 @@ end
 
 # convert a symbol into a string
 def turn_symbol_into_string(symbol)
+	symbol.to_s
 end
 
 # get the average from an array, rounded to the nearest integer
