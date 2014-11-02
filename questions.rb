@@ -110,6 +110,8 @@ end
 # get the average from an array, rounded to the nearest integer
 # so [10, 15, 25] should return 33
 def average_of_array(array)
+	number = array.inject {|sum, el| sum + el }.to_f / array.size
+	number.ceil
 end
 
 # get all the elements in an array, up until the first element
@@ -144,7 +146,6 @@ end
 # add all the keys and all the values together, e.g.
 # {1 => 1, 2 => 2} becomes 6
 def add_together_keys_and_values(hash)
-
 end
 
 # take out all the capital letters from a string
@@ -181,6 +182,7 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+	# string.split.map(&:capitalize).join(' ')
 end
 
 # return true if a string contains any special characters
@@ -206,6 +208,7 @@ end
 
 # count the number of words in a file
 def word_count_a_file(file_path)
+
 end
 
 # --- tougher ones ---
@@ -241,6 +244,7 @@ end
 # go from 1 to 100
 # (there's no RSpec test for this one)
 def fizzbuzz_without_modulo
+
 end
 
 # print the lyrics of the song 99 bottles of beer on the wall
@@ -250,4 +254,5 @@ end
 # at the end.
 # (there's no RSpec test for this one)
 def ninety_nine_bottles_of_beer
+
 end
